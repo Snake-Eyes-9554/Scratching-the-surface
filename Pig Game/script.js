@@ -12,6 +12,7 @@ const diceImg = document.querySelector('.dice');
 const newBtn = document.querySelector('.btn--new');
 const rollBtn = document.querySelector('.btn--roll');
 const holdBtn = document.querySelector('.btn--hold');
+console.log("h")
 
 //Declaring Variables:
 
