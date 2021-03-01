@@ -9,6 +9,13 @@ https://snake-eyes-9554.github.io/Scratching-the-surface/miniGamesWithJS/guessTh
 https://snake-eyes-9554.github.io/Scratching-the-surface/miniGamesWithJS/pigGame/
 
 
-# Messing around with canvas:
+
+# Canvas:
+
+## Messing around with canvas:
 
 https://snake-eyes-9554.github.io/Scratching-the-surface/learningCanvas/messingAroundWithCanvas/
+
+## Creating my first project:
+
+https://snake-eyes-9554.github.io/Scratching-the-surface/learningCanvas/workingOnMyFirstCanvas/
