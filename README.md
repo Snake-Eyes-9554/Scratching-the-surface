@@ -1,4 +1,4 @@
-# miniGames with js:
+# Minigames with js:
 
 ## Guess the number:
 
