@@ -144,7 +144,7 @@ canvas.height = window.innerHeight;
 
 // animate();
 
-//Animating mouse movement:
+//Animating mouse movements:
 let mouse = {
   x: undefined,
   y: undefined
