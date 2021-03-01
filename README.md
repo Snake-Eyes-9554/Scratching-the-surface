@@ -18,4 +18,4 @@ https://snake-eyes-9554.github.io/Scratching-the-surface/learningCanvas/messingA
 
 ## Creating my first project:
 
-https://snake-eyes-9554.github.io/Scratching-the-surface/learningCanvas/workingOnMyFirstCanvas/
+https://snake-eyes-9554.github.io/Scratching-the-surface/learningCanvas/workingOnMyFirstProject/
