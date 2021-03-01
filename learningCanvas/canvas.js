@@ -32,16 +32,16 @@ canvas.height = window.innerHeight;
 // c.stroke();
 
 //Creating random colors and positions for circles:
-// let rgbComponents = ["start",0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f"]
+// let rgbComponents = [0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e","f"]
 // let col;
 // for(i=0; i<100000; i++) {
 //     let r1, r2, r3, r4, r5, r6;
-//     r1 = Math.trunc(Math.random()*16)+1;
-//     r2 = Math.trunc(Math.random()*16)+1;
-//     r3 = Math.trunc(Math.random()*16)+1;
-//     r4 = Math.trunc(Math.random()*16)+1;
-//     r5 = Math.trunc(Math.random()*16)+1;
-//     r6 = Math.trunc(Math.random()*16)+1;
+//     r1 = Math.floor(Math.random()*rgbComponents.length);
+//     r2 = Math.floor(Math.random()*rgbComponents.length);
+//     r3 = Math.floor(Math.random()*rgbComponents.length);
+//     r4 = Math.floor(Math.random()*rgbComponents.length);
+//     r5 = Math.floor(Math.random()*rgbComponents.length);
+//     r6 = Math.floor(Math.random()*rgbComponents.length);
 //     col = `#${rgbComponents[r1]}${rgbComponents[r2]}${rgbComponents[r3]}${rgbComponents[r4]}${rgbComponents[r5]}${rgbComponents[r6]}`;
 //     let x = Math.random() * window.innerWidth;
 //     let y = Math.random() * window.innerHeight;
