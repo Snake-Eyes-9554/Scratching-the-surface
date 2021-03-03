@@ -3,3 +3,18 @@
     padding: 0;
     overflow: hidden;
 }
+
+.space1 {
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.game {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+canvas {
+    display: block;
+}

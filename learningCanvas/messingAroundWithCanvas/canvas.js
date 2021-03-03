@@ -171,7 +171,7 @@ window.addEventListener('resize', function() {
   init();
 })
 
-function circle(x, y, dx, dy, radius) {
+function circle(x, y, dx, dy, radius, color) {
   this.x = x;
   this.y = y;
   this.dx = dx;
@@ -179,7 +179,7 @@ function circle(x, y, dx, dy, radius) {
   this.radius = radius;
   this.dr = 1;
   this.minRadius = radius;
-  this.color = colorArray[Math.floor(Math.random() * colorArray.length)];
+  this.color = color;
 
   this.draw = function () {
     c.beginPath();
@@ -219,7 +219,8 @@ for (let i = 0; i < 1000; i++) {
   let y = Math.random() * (innerHeight - radius * 2) + radius;
   let dx = (Math.random() - 0.5) * 0.5;
   let dy = (Math.random() - 0.5) * 0.5;
-  circleArray.push(new circle(x, y, dx, dy, radius));
+  let color = colorsArray[Math.floor(Math.random() * colorsArray.length) + 1];
+  circleArray.push(new circle(x, y, dx, dy, radius, color));
 }
 
 function init() {
@@ -230,7 +231,8 @@ function init() {
     let y = Math.random() * (innerHeight - radius * 2) + radius;
     let dx = (Math.random() - 0.5) * 1;
     let dy = (Math.random() - 0.5) * 1;
-    circleArray.push(new circle(x, y, dx, dy, radius));
+    let color = colorArray[Math.floor(Math.random() * colorsArray.length) + 1];
+    circleArray.push(new circle(x, y, dx, dy, radius, color));
   }
 }
 
@@ -238,7 +240,7 @@ function animate() {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, innerWidth, innerHeight);
 
-  for(var i = 0; i < circleArray.length; i++) {
+  for(let i = 0; i < circleArray.length; i++) {
     circleArray[i].update();
   }
 }
