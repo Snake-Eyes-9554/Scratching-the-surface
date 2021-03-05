@@ -1,6 +1,6 @@
 //SELECTING CANVAS:
-let canvas = document.querySelector("canvas");
-let c = canvas.getContext("2d");
+const canvas = document.querySelector("canvas");
+const c = canvas.getContext("2d");
 
 //DECLARING STARTING CONDITIONS:
 canvas.width = window.innerWidth;
