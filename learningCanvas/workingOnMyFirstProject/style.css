@@ -1,20 +1,120 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    box-sizing: inherit;
 }
 
-.space1 {
-    text-align: center;
-    padding-bottom: 10%;
+html {
+    box-sizing: border-box;
+    color: #F1DAC4;
 }
 
-.game {
+body {
+    background-color: #0D0C1D;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+#top-side {
+    padding-top: 1%;
+    margin-bottom: 2%;
     display: flex;
     justify-content: space-around;
 }
 
-
-canvas {
-    display: block;
+#top-side h1 {
+    padding-top: 3%;
+    text-align: center;
+    font-size: 4.5rem;
 }
+
+#top-side .high-score-div {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#top-side .high-score {
+    padding-bottom: 10%;
+    border-bottom: 0.5vh solid #F1DAC4 ;
+}
+
+#game {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#game #left-side {
+    width: 12%;
+    flex-basis: 14%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#game #left-side .btn-diff {
+    font-family: 'Akaya Telivigala', cursive;
+    background-color: #F1DAC4;
+    color: #0D0C1D;
+    height: 25%;
+    font-size: 3rem;
+    border-top: 0.5vh solid #F1DAC4;
+    border-left: 0.5vh solid #F1DAC4;
+    border-right: 0.5vh solid #F1DAC4;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#game #left-side .btn-new {
+    font-family: 'Akaya Telivigala', cursive;
+    background-color: #F1DAC4;
+    color: #0D0C1D;
+    height: 25%;
+    font-size: 3rem;
+    border-top: 0.5vh solid #F1DAC4;
+    border-left: 0.5vh solid #F1DAC4;
+    border-right: 0.5vh solid #F1DAC4;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn-new:focus {
+    background-color: #ddc6b0 !important;
+}
+
+.btn-new:focus { outline: none; }
+
+.btn-diff:focus {
+    background-color: #ddc6b0 !important;
+}
+
+.btn-diff:focus { outline: none; }
+
+
+
+#game canvas {
+    flex-basis: 68% !important;
+    border: 0.5vh solid #0D0C1D;
+}
+
+#game #right-side {
+    width: 10%;
+    flex-basis: 14%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+#game #right-side h3 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+#game #right-side .score {
+    border-bottom: 0.5vh solid #F1DAC4 ;
+}
+
+#game #right-side .logo-margin {
+        margin-bottom: 10%;
+}
+

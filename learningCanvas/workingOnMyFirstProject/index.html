@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
   <head>
+
     <meta charset="UTF-8" />
     <meta name="description" content="Learning" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
@@ -8,24 +11,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manipulating Canvas</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+
   </head>
 
+
+
   <body>
-    <div id = "space-top" class = "space1">
-    <h1>Space 1</h1>
+    
+    <!--Title and high scores-->
+    <div id = "top-side">
+
+      <h1>WELCOME TO PONG!</h1>
+
+      <div class = "high-score-div">
+        <h3 class="logo-margin">🥇</h3>
+        <h3 class = "high-score">Easy Mode<br>HighScore:<br><span class ="high-score-value-one">0</span></h3>
+      </div>
+      
+      <div class = "high-score-div">
+        <h3 class="logo-margin">🥇</h3>
+        <h3 class = "high-score">Normal Mode<br>HighScore:<br><span class ="high-score-value-two">0</span></h3>
+      </div>
+      
+      <div class = "high-score-div">
+        <h3 class="logo-margin">🥇</h3>
+        <h3 class = "high-score">Hard Mode<br>HighScore:<br><span class ="high-score-value-three">0</span></h3>
+      </div>
+    
     </div>
 
 
-    <div class = "game">
-      <div class = "test1">
-        <h1>Hi</h1>
+    <!--Game division-->
+    <div id = "game">
+
+      <!--Left side-->
+      <div id = "left-side">
+        <button class="btn-new"><i class="fa fa-refresh" style="font-size:3rem;color:orangered"></i> New game</button>
+        <button class="btn-diff easy-mode">EASY<br>✪</button>
+        <button class="btn-diff normal-mode">NORMAL<br>✪✪</button>
+        <button class="btn-diff hard-mode" style="border-bottom: 0.5vh solid black;">HARD<br>✪✪✪</button>
       </div>
+
+      
+      <!--Canvas-->
       <div class = "canvasDiv">
         <canvas></canvas>
       </div>
-      <div class = "test2">
-        <h1>Hi</h1>
+
+
+      <!--Right side-->
+      <div id = "right-side">
+        <h3 class="logo-margin">💯</h3>
+        <h3 class = "score">Score:<br><span class = "score-value">0</span></h3>
+        <h3>*</h3>
+        <h3>*</h3>
+        <h3>*</h3>
       </div>
+
+
     </div>
 
 
