@@ -19,3 +19,7 @@ https://snake-eyes-9554.github.io/Scratching-the-surface/learningCanvas/messingA
 ## Creating my first project:
 
 https://snake-eyes-9554.github.io/Scratching-the-surface/learningCanvas/workingOnMyFirstProject/
+
+## Creating my Second project:
+
+https://snake-eyes-9554.github.io/Scratching-the-surface/learningCanvas/workingOnMySecondProject/
