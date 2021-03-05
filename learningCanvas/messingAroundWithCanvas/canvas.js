@@ -219,7 +219,7 @@ for (let i = 0; i < 1000; i++) {
   let y = Math.random() * (innerHeight - radius * 2) + radius;
   let dx = (Math.random() - 0.5) * 0.5;
   let dy = (Math.random() - 0.5) * 0.5;
-  let color = colorsArray[Math.floor(Math.random() * colorsArray.length) + 1];
+  let color = colorArray[Math.floor(Math.random() * colorArray.length) + 1];
   circleArray.push(new circle(x, y, dx, dy, radius, color));
 }
 
@@ -231,7 +231,7 @@ function init() {
     let y = Math.random() * (innerHeight - radius * 2) + radius;
     let dx = (Math.random() - 0.5) * 1;
     let dy = (Math.random() - 0.5) * 1;
-    let color = colorArray[Math.floor(Math.random() * colorsArray.length) + 1];
+    let color = colorArray[Math.floor(Math.random() * colorArray.length) + 1];
     circleArray.push(new circle(x, y, dx, dy, radius, color));
   }
 }
