@@ -1,13 +1,13 @@
 //SELECTING CANVAS:
-let canvas = document.querySelector("canvas");
-let c = canvas.getContext("2d");
+const canvas = document.querySelector("canvas");
+const c = canvas.getContext("2d");
 
 //DECLARING STARTING CONDITIONS:
 canvas.width = (17 * window.innerWidth) / 25;
 canvas.height = (17 * window.innerHeight) / 25;
 
 //DECLARING VARIABLES:
-let colorArray = ["#F1DAC4", "#A69CAC", "#474973", "#161B33", "#0D0C1D"];
+const colorArray = ["#F1DAC4", "#A69CAC", "#474973", "#161B33", "#0D0C1D"];
 
 /* Bouncing balls' parameters */
 let bouncingBallRadius = canvas.height / 64;
@@ -34,7 +34,7 @@ let bouncingBallThreeStartingPosition = [
 let animateBallsRadius = canvas.height / 400;
 let animatedBallsXSpeed = 9* canvas.width / 26100;
 let animatedBallsYSpeed = 9* canvas.height / 12720;
-let animatedBallsNumber = 1000;
+const animatedBallsNumber = 100;
 /* Animated balls' parameters */
 
 /* Declaring balls' variables */
@@ -233,8 +233,8 @@ function resetGame() {
 
 //DECLARING CANVAS EVENT LISTENERS:
 let mouse = {
-  x: undefined,
-  y: undefined,
+  x: null,
+  y: null,
 };
 window.addEventListener("mousemove", function (event) {
   mouse.x = event.x;
