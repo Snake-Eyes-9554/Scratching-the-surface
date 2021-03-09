@@ -249,7 +249,7 @@ btnSmall.addEventListener('click', function() {
     btnSmall.classList.add('btn-color');
     btnMedium.classList.remove('btn-color');
     btnLarge.classList.remove('btn-color');
-    numberOfSquares = 900;
+    numberOfSquares = 400;
     gameSizeUpdater();
   }
 });
@@ -269,7 +269,7 @@ btnLarge.addEventListener('click', function() {
     btnLarge.classList.add('btn-color');
     btnSmall.classList.remove('btn-color');
     btnMedium.classList.remove('btn-color');
-    numberOfSquares = 400;
+    numberOfSquares = 900;
     gameSizeUpdater();
   }
 });
@@ -494,7 +494,7 @@ function runGame() {
   
   /* Stopping game if head hits tail */ /* Stopping food from spawning on tail */
   for (let i = eatenFoodArray.length - 1; i >= 0; i--) {
-    if (Math.abs(snakePositionX - snakePassedPositions[snakePassedPositions.length - i - 2].x) <= 0.1 && Math.abs(snakePositionY - snakePassedPositions[snakePassedPositions.length - i - 2].y) <= 0.1) {
+    if (Math.abs(snakePositionX - snakePassedPositions[snakePassedPositions.length - i - 2].x) <= 1 && Math.abs(snakePositionY - snakePassedPositions[snakePassedPositions.length - i - 2].y) <= 1) {
       loseGameAudio.play();
       clearInterval(runGameInterval);
       if (scoreValue > highScoreValue) {
