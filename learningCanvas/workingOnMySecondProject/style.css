@@ -2,8 +2,134 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    overflow: hidden;
 }
 
 html {
     box-sizing: border-box;
+}
+
+body {
+    background-color: #a0bc5c;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #30341c;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+}
+
+.game {
+    display: flex;
+}
+
+.left-space-one {
+    flex-basis: 5%;
+}
+
+.left-side {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-space-two {
+    flex-basis: 5%;
+}
+
+ h2 {
+    font-size: 3rem;
+    padding-bottom: 15%;
+}
+
+.btn-slow , .btn-normal , .btn-fast , .btn-small , .btn-medium , .btn-large {
+    background-color: #a0bc5c;
+    height: 20%;
+    font-size: 3rem;
+    cursor: pointer;
+    margin-bottom: 10%;
+    font-family: 'Akaya Telivigala', cursive;
+    width: 70%;
+    border: 3px solid #30341c;
+}
+
+
+canvas {
+    flex-basis: 40%;
+    background-color: rgba(25,25,25);
+} 
+
+.right-space-one {
+    flex-basis: 5%;
+}
+
+.right-side {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-space-two {
+    flex-basis: 5%;
+}
+
+
+.lower-game-content {
+    display: flex;
+    margin-top: 0.5%;
+}
+
+.btn-start , .btn-reset {
+    background-color: #a0bc5c;
+    height: 100%;
+    font-size: 3rem;
+    cursor: pointer;
+    font-family: 'Akaya Telivigala', cursive;
+    flex-basis: 20%;
+    border: 3px solid #30341c;
+}
+
+.btn-color {
+    background-color: #61772f;
+}
+
+.scores {
+    display: flex;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+.scores h2 {
+    flex-basis: 28%;
+}
+
+.scores .high-score-element {
+  animation-name: none;
+  animation-duration: 0.8s;
+}
+
+@keyframes enlarge {
+    0%  {color: #30341c; font-size: 3rem;}
+    15% {color: #61772f; font-size: 3.2rem;}
+    30% {color: #30341c; font-size: 3rem;}
+    45% {color: #61772f; font-size: 3.2rem;}
+    60% {color: #30341c; font-size: 3rem;}
+    80% {color: #61772f; font-size: 3.2rem;}
+  }
+
+.lower-game-content-space {
+    flex-basis: 30%;
+}
+
+.lower-game-content-space-left {
+    flex-basis: 30%;
+}
+
+.lower-game-content-space-right {
+    flex-basis: 14%;
 }

@@ -7,13 +7,44 @@
     <meta name="author" content="John Doe" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet"> 
+    <title>Snake</title>
   </head>
 
   <body>
-
-    <canvas></canvas>
-    
+    <h1>WELCOME TO SNAKE!</h1>
+    <div class = "game">
+      <div class = "left-space-one"></div>
+      <div class = "left-side">
+        <h2>Pick Your Game Speed:</h2>
+        <button class = "btn-slow">SLOW</button>
+        <button class = "btn-normal">NORMAL</button>
+        <button class = "btn-fast">FAST</button>
+      </div>
+      <div class = "left-space-two"></div>
+      <canvas id = "myCanvas"></canvas>
+      <div class = "right-space-one"></div>
+      <div class = "right-side">
+        <h2>Pick Your Game Size:</h2>
+        <button class = "btn-small">SMALL</button>
+        <button class = "btn-medium">MEDIUM</button>
+        <button class = "btn-large">LARGE</button>
+      </div>
+      <div class = "right-space-two"></div>
+    </div>
+    <div class = "lower-game-content">
+      <div class = "lower-game-content-space"></div>
+      <button class = "btn-start">START GAME</button>
+      <button class = "btn-reset">RESET</button>
+      <div class = "lower-game-content-space"></div>
+    </div>
+    <div class = "scores">
+      <div class = "lower-game-content-space-left"></div>
+      <h2 class = "score-element">TAIL LENGTH: <span class = "score">0</span></h2>
+      <h2 class = "high-score-element">HIGHEST TAIL LENGTH: <span class = "high-score">0</span></h2>
+      <div class = "lower-game-content-space-right"></div>
+    </div>
   </body>
 
   <script src="canvas.js"></script>
