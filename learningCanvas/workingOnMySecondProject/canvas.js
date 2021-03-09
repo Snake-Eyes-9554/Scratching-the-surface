@@ -122,7 +122,7 @@ let startGameInterval;
 
 //FUNCTIONS: 
 
-/* Functions for counter */
+/* Functions for counter and first 5 seconds */
 class counterRun {
   constructor(number) {
       this.number = number;
@@ -156,8 +156,6 @@ if (countValue > 0) {
 }
 }
 
-
-//DECLARING FUNCTIONS:
 function showSnake() {
   return;
 }
@@ -187,6 +185,10 @@ function gameSizeUpdater() {
 
 //DECLARING CANVAS EVENT LISTENERS:
 window.addEventListener("resize", function() {
+  clearInterval(runGameInterval);
+  cancelAnimationFrame(animationID);
+  clearInterval(startGameInterval);
+  clearInterval(showSnakeInterval);
 });
 
 
@@ -208,10 +210,6 @@ window.addEventListener("keydown", function(event) {
     if (event.key === "d" || event.key === "D" || code == '39') {
       direction = "right"
     }
-  }
-  if (event.key === " ") {
-    clearInterval(runGameInterval);
-    cancelAnimationFrame(animationID);
   }
 })
 
@@ -282,10 +280,10 @@ btnStart.addEventListener('click', function() {
   btnMedium.classList.add('btn-color');
   btnNormal.classList.add('btn-color');
   };
-  if (!btnSlow.classList.contains('btn-color') && !btnFast.classList.contains('btn-color') && btnMedium.classList.contains('btn-color')) {
+  if (!btnSlow.classList.contains('btn-color') && !btnFast.classList.contains('btn-color') && (btnSmall.classList.contains('btn-color') || btnMedium.classList.contains('btn-color') || btnLarge.classList.contains('btn-color'))) {
     btnNormal.classList.add('btn-color');
   }
-  if (!btnSmall.classList.contains('btn-color') && !btnLarge.classList.contains('btn-color') && btnNormal.classList.contains('btn-color')) {
+  if (!btnSmall.classList.contains('btn-color') && !btnLarge.classList.contains('btn-color') && (btnSlow.classList.contains('btn-color') || btnNormal.classList.contains('btn-color') || btnFast.classList.contains('btn-color'))) {
     btnMedium.classList.add('btn-color');
   }
   animate();
@@ -402,6 +400,7 @@ class foodSet {
 
 //PUSHING FOOD:
 function randomizeFood () {
+  foodArray = [];
   for (let i = 0; i < numberOfSquares; i++) {
     let x = (Math.trunc(Math.random() * Math.sqrt(numberOfSquares))) * squareSide + halfSquareSide;
     let y = (Math.trunc(Math.random() * Math.sqrt(numberOfSquares))) * squareSide + halfSquareSide;
@@ -417,6 +416,7 @@ function randomizeFood () {
     let color = `#${rgbComponents[r1]}${rgbComponents[r2]}${rgbComponents[r3]}${rgbComponents[r4]}${rgbComponents[r5]}${rgbComponents[r6]}`;
     foodArray.push(new foodSet(x, y, color))
   }
+  console.log(foodArray);
 }
 randomizeFood ();
 
