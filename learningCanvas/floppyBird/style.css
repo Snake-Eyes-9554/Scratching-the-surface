@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+canvas {
+    background: linear-gradient(to bottom, #2ca0cd, #8dcbe4, #d0eaf4);
+}
